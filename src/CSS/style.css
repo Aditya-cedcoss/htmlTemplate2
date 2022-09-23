@@ -1,0 +1,133 @@
+/* universal tag */
+* {
+  margin: 0;
+  padding: 15px;
+  font-family: sans-serif;
+}
+/* variable declared */
+:root {
+  --bg-grey: #eeeeee;
+}
+/* header part */
+header {
+  display: flex;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  display: inline;
+  float: right;
+}
+.nav {
+  width: 84%;
+}
+/* conatiners */
+.top-container {
+  width: 25%;
+}
+.container {
+  background-color: var(--bg-grey);
+  padding:20px;
+}
+.top-container>button{
+    width: 60%;
+    padding: 10px;
+    margin-left: 15px;
+}
+/* cards */
+.cards{
+    background-color: white;
+    display: flex;
+    text-align: center;
+    align-content: space-between;
+    align-items: center;
+    height: 500px;
+}
+.card{
+    width: 100%;
+    height: 90%;
+}
+.img-tag{
+    height: 50%;
+    background-color: var(--bg-grey);
+}
+.card>a{
+    color: black;
+}
+/* news letter */
+.news-letter{
+    padding-left: 20%;
+    background-color: var(--bg-grey);
+    display: flex;
+    text-align: center;
+    padding-right: 20%;
+}
+.news-letter>input{
+    height: 10px;
+    align-items: center;
+    width: 30%;
+    margin: auto;
+}
+.news-letter>button{
+    height: 45px;
+    margin: auto;
+    width: 30%;
+    background-color: #288ACF;
+    border: none;
+    font-size: large;
+    color: white;
+    text-align: left;
+    padding-left: 5%;
+    font-weight: bold;
+}
+/* footer */
+.footer{
+    display: flex;
+}
+.footer>div{
+    width: 50%;
+}
+#right{
+    text-align: right;
+}
+@media screen and (max-width: 780px){
+    .cards{
+    background-color: white;
+    display: block;
+    height: auto;
+    text-align: center;
+    align-items: flex-end;
+    border: 1px solid black;
+    }
+    .img-tag{
+        height: 120px;
+        background-color: var(--bg-grey);
+
+    }
+    .news-letter>h1{
+        font-size: small;
+    }
+    .news-letter>input{
+        height: 10px;
+    }
+    .news-letter>button{
+        font-size: small;
+        width: auto;
+    }
+    .top-container {
+        width: 100%;
+      }
+      .nav {
+        width: 90%;
+        font-size: smaller;
+      }
+      header>div>h1{
+        width: 50%;
+        font-size: medium;
+      }
+}
